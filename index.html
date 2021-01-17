@@ -13,7 +13,7 @@
 <body>
     <main>
         <header class="menu content">
-            <img class="logo" src="./images/logo.svg" />
+            <img class="logo" src="./images/logo.svg" alt="Logo"/>
             <nav class="menu-nav">
                 <div class="bar-menu-content">
                     <input id="bar-menu" class="bar-menu" type="checkbox">
@@ -26,10 +26,10 @@
                         </label>
                            
                         <ul class="menu-list-content hover-list ">
-                            <li><a href="#">Episodios</a></li>
-                            <li><a href="#">Nosotros</a></li>
-                            <li><a href="#">Entrevistas</a></li>
-                            <li><a href="#">Tópicos</a></li>
+                            <li><a href="#episodios">Episodios</a></li>
+                            <li><a href="#de-donde">Nosotros</a></li>
+                            <li><a href="#invitados">Entrevistas</a></li>
+                            <li><a href="#topicos">Tópicos</a></li>
                         </ul>
                     </div>
                 </div>
@@ -38,38 +38,47 @@
 
         <div>
             <section class="content">
-                <h1 class="title">Hello <span class="text-line-through">world</span> pale blue dot<span>.</span></h1>
+                <h1 class="title">Hello <span class="text-line-through">world</span> pale blue dot<span class="point-p">.</span></h1>
                 <p>
                     El portal de podcasts que explora el mundo de la programación<span class="remove-desktop">.</span> <span class="remove-mobile">y la tecnología.</span>
-                    Nuevos episodios, todos los jueves cada 15 días<span class="point">.</span>
+                    Nuevos episodios, todos los jueves cada 15 días<span>.</span>
                 </p>
                 <button class="button-conoce margin-bottom-20 primary-button hover-Button">Conocé más</button>
             </section>
-            <section class="episodiosContent">
+            <section class="episodiosContent" id="episodios">
                 <div class="bg-episodios"></div>
                 <div class="info-episodios">
-                    <div class="podcastGrid content">
+                    <dv class="podcastGrid content">
                         <h4 class="subtitle subtitleEpisodios">Episodios</h4>
                         <div class="podcast podcast1 podcast-mobile">
-                            <img src="./images/embed1_.png" />
+                            <!--<img src="./images/embed1_.png" />-->
+                            <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"></iframe>
                         </div>
                         <div class="podcast podcast2 podcast-mobile">
-                            <img src="./images/embed2_.png" />
+                           <!-- <img src="./images/embed2_.png" />-->
+                            <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"></iframe>
                         </div>
                         <div class="podcast podcast3 podcast-mobile">
-                            <img src="./images/embed3_.png" />
+                           <!-- <img src="./images/embed3_.png" />-->
+                            <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"></iframe>
                         </div>
                         <div class="podcast podcast4 podcast-mobile">
-                            <img src="./images/embed1_.png" />
+                            <!--<img src="./images/embed1_.png" />-->
+                            <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"></iframe>
                         </div>
-                        <img class="podcast-desktop" style="width: 384px;margin-bottom: 20px;" src="./images/embed1.png" />
+                       <!-- <img class="podcast-desktop" style="width: 384px;margin-bottom: 20px;" src="./images/embed1.png" />
                         <img class="podcast-desktop" style="width: 384px;margin-bottom: 20px;" src="./images/embed2.png" />
                         <img class="podcast-desktop" style="width: 384px;margin-bottom: 20px;" src="./images/embed3.png" />
-                        <img class="podcast-desktop" style="width: 384px;margin-bottom: 20px;" src="./images/embed4.png" />
-                    </div>
+                        <img class="podcast-desktop" style="width: 384px;margin-bottom: 20px;" src="./images/embed4.png" />-->
+                        <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"></iframe>
+                        <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"></iframe>
+                        <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"></iframe>
+                        <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"></iframe>
+                    </div>               
+                        
                 </div>
             </section>
-            <section class="venimos-content content">
+            <section class="venimos-content content" id="de-donde">
                 <figure class="phone">
                     <img src="./images/phone.png" />
                 </figure>
@@ -92,7 +101,7 @@
             <div class="content">
                 <h4 class="subtitle subtitle-invitados">Invitadas/os estelares</h4>
             </div>
-            <section class="invitadas">
+            <section class="invitadas" id="invitados">
                 <div class="invitados-info">
                     <figure>
                         <img src="./images/grace-hopper.png" />
@@ -114,7 +123,7 @@
                     </figure>
                 </div>
             </section>
-            <section class="content">
+            <section class="content section-wraper" id="topicos">
                 <h4 class="subtitle subtitle-topics">Algunos de nuestros temas</h4>
                 <ul>
                     <li class="topics">
@@ -153,8 +162,8 @@
         </div>
 
         <footer class="footer">
-            <span>2019 - Hello blue pale dot</span>
-            <ul class="social-media">
+            <span class="footer-hello">2019 - Hello blue pale dot</span>
+            <ul class="social-media social-media-dext">
                 <li>
                     <span class="fab fa-spotify"></span>
                 </li>
