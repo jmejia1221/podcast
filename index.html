@@ -18,13 +18,10 @@
                 <div class="bar-menu-content">
                     <input id="bar-menu" class="bar-menu" type="checkbox">
                     <label class="bar-icon" for="bar-menu">
-                        <i class="fas fa-bars"></i>
+                        <!-- <i class="fas fa-bars"></i> -->
+                        <i class="fas fa-times"></i>
                     </label>
                     <div class="menu-list">
-                        <label class="close-icon" for="bar-menu">
-                            <i class="fas fa-times"></i>
-                        </label>
-                           
                         <ul class="menu-list-content hover-list ">
                             <li><a href="#episodios">Episodios</a></li>
                             <li><a href="#de-donde">Nosotros</a></li>
@@ -41,7 +38,7 @@
                 <h1 class="title">Hello <span class="text-line-through">world</span> pale blue dot<span class="point-p">.</span></h1>
                 <p>
                     El portal de podcasts que explora el mundo de la programación<span class="remove-desktop">.</span> <span class="remove-mobile">y la tecnología.</span>
-                    Nuevos episodios, todos los jueves cada 15 días<span>.</span>
+                    Nuevos episodios, todos los jueves cada 15 días.
                 </p>
                 <button class="button-conoce margin-bottom-20 primary-button hover-Button">Conocé más</button>
             </section>
@@ -51,31 +48,34 @@
                     <dv class="podcastGrid content">
                         <h4 class="subtitle subtitleEpisodios">Episodios</h4>
                         <div class="podcast podcast1 podcast-mobile">
-                            <!--<img src="./images/embed1_.png" />-->
-                            <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"></iframe>
+                            <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"
+                                frameborder="0"
+                                allowtransparency="true"
+                                allow="encrypted-media"
+                                crossorigin="anonymous"></iframe>
                         </div>
                         <div class="podcast podcast2 podcast-mobile">
-                           <!-- <img src="./images/embed2_.png" />-->
-                            <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"></iframe>
+                            <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"
+                                frameborder="0"
+                                allowtransparency="true"
+                                allow="encrypted-media"
+                                crossorigin="anonymous"></iframe>
                         </div>
                         <div class="podcast podcast3 podcast-mobile">
-                           <!-- <img src="./images/embed3_.png" />-->
-                            <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"></iframe>
+                            <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"
+                                frameborder="0"
+                                allowtransparency="true"
+                                allow="encrypted-media"
+                                crossorigin="anonymous"></iframe>
                         </div>
                         <div class="podcast podcast4 podcast-mobile">
-                            <!--<img src="./images/embed1_.png" />-->
-                            <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"></iframe>
+                            <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"
+                                frameborder="0"
+                                allowtransparency="true"
+                                allow="encrypted-media"
+                                crossorigin="anonymous"></iframe>
                         </div>
-                       <!-- <img class="podcast-desktop" style="width: 384px;margin-bottom: 20px;" src="./images/embed1.png" />
-                        <img class="podcast-desktop" style="width: 384px;margin-bottom: 20px;" src="./images/embed2.png" />
-                        <img class="podcast-desktop" style="width: 384px;margin-bottom: 20px;" src="./images/embed3.png" />
-                        <img class="podcast-desktop" style="width: 384px;margin-bottom: 20px;" src="./images/embed4.png" />-->
-                        <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"></iframe>
-                        <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"></iframe>
-                        <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"></iframe>
-                        <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"></iframe>
-                    </div>               
-                        
+                    </div>
                 </div>
             </section>
             <section class="venimos-content content" id="de-donde">
@@ -125,7 +125,7 @@
             </section>
             <section class="content section-wraper" id="topicos">
                 <h4 class="subtitle subtitle-topics">Algunos de nuestros temas</h4>
-                <ul>
+                <ul class="topics-list">
                     <li class="topics">
                         <figure>
                             <img src="./images/icon1.svg" />
@@ -152,18 +152,20 @@
                     </li>
                 </ul>
             </section>
-            <section class=" novedades-content ">
+            <section class="novedades-content ">
                 <div class="bg-novedades"></div>
                 <div class="info-episodios">
                     <h4 class="subtitle subtitle-novedades ">¿Querés las últimas novedades?</h4>
-                    <button class="primary-button boton-escucha margin-bottom-20 hover-Button">Escuchá los episodios</button>
+                    <div class="content">
+                        <button class="primary-button escucha-button margin-bottom-20">Escuchá los episodios</button>
+                    </div>
                  </div>
             </section>
         </div>
 
         <footer class="footer">
             <span class="footer-hello">2019 - Hello blue pale dot</span>
-            <ul class="social-media social-media-dext">
+            <ul class="social-media">
                 <li>
                     <span class="fab fa-spotify"></span>
                 </li>
